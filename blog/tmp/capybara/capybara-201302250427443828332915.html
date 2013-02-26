@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>Blog</title>
+  <link type="text/css" rel="stylesheet" media="all" href="/assets/application.css" />
+  <script type="text/javascript" src="/assets/application.js"></script>
+  
+</head>
+<body style="background: #EEEEEE;">
+
+<p id="notice">Post was successfully created.</p>
+
+<p>
+  <b>Name:</b>
+  test post 1
+</p>
+
+<p>
+  <b>Title:</b>
+  this is the first tested post
+</p>
+
+<p>
+  <b>Content:</b>
+  this is the content of the first tested post
+</p>
+
+<p>
+<b>Tags:</b>
+Sajed
+</p>
+
+<h2>Comments</h2>
+
+
+<h2>Add a comment:</h2>
+<form method="post" id="new_comment" class="new_comment" action="/posts/1/comments" accept-charset="UTF-8"><div style="margin:0;padding:0;display:inline"><input type="hidden" value="✓" name="utf8" style="" /></div>
+  <div class="field">
+    <label for="comment_commenter">Commenter</label><br />
+    <input type="text" size="30" name="comment[commenter]" id="comment_commenter" />
+  </div>
+  <div class="field">
+    <label for="comment_body">Body</label><br />
+    <textarea rows="20" name="comment[body]" id="comment_body" cols="40"></textarea>
+  </div>
+  <div class="actions">
+    <input type="submit" value="Create Comment" name="commit" />
+  </div>
+</form>
+
+<br />
+
+<a href="/posts/1/edit">Edit</a> |
+<a href="/posts">Back</a>
+
+
+
+
+</body></html>

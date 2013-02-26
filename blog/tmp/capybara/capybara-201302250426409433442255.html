@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title>Blog</title>
+  <link type="text/css" rel="stylesheet" media="all" href="/assets/application.css" />
+  <script type="text/javascript" src="/assets/application.js"></script>
+  
+</head>
+<body style="background: #EEEEEE;">
+
+<h1>New post</h1>
+
+<form method="post" id="new_post" class="new_post" action="/posts" accept-charset="UTF-8"><div style="margin:0;padding:0;display:inline"><input type="hidden" value="✓" name="utf8" /></div>
+ 
+  <div class="field">
+    <label for="post_name">Name</label><br />
+    <input type="text" size="30" name="post[name]" id="post_name" />
+  </div>
+  <div class="field">
+    <label for="post_title">Title</label><br />
+    <input type="text" size="30" name="post[title]" id="post_title" />
+  </div>
+  <div class="field">
+    <label for="post_content">Content</label><br />
+    <textarea rows="20" name="post[content]" id="post_content" cols="40"></textarea>
+  </div>
+  <h2>Tags</h2>
+  
+  <div class="field">
+    <label for="post_tags_attributes_0_name">Tag:</label>
+    <input type="text" size="30" name="post[tags_attributes][0][name]" id="post_tags_attributes_0_name" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" value="Create Post" name="commit" />
+  </div>
+</form>
+
+<a href="/posts">Back</a>
+
+
+
+
+</body></html>
